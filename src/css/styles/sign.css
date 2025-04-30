@@ -1,0 +1,73 @@
+@import url(../layout.css);
+@import url(./index.css);
+header{
+    height: 70vh;
+    .heading{
+        padding-top: 5vh;
+        justify-content: flex-start;
+    }
+}
+main{
+    position: fixed;
+    top: 20%;
+    left: 40%;
+    .form-controller{
+        gap: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border-radius: 2ch;
+        background-color: aliceblue;
+        padding: 20px;
+        width: 35vh;
+        & label{
+            gap: 5px;
+            display: flex;
+        }
+        & a{
+            color: rgb(30, 165, 228);
+        }
+        h1{
+            font-size:xx-large;
+            color: rgb(45, 108, 226);
+        }
+        >input{
+            padding-left: 10px;
+            border-radius: 1ch;
+            width: 90%;
+            height: 40px;
+        }
+        & div{
+            display: flex;
+            justify-content: space-between;
+            width: 90%;
+            font-size: small;
+        }
+        & button{
+            border-radius: 1ch;
+            width: 90%;
+            height: 40px;
+            background-color: rgb(45, 108, 226);
+            color: white;
+        }
+    }
+}
+div.overview{
+    visibility: hidden;
+    opacity: 0;
+    transition: .4s ease;
+    position: fixed;
+    inset: 0;
+    background: #000000;
+    z-index: 5;
+}
+div.overview.open{
+    visibility: visible;
+    opacity: .4;
+}
+.register_checkbox{
+    & a,label{
+        font-size: 0.75em;
+    }
+}

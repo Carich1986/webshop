@@ -1,0 +1,80 @@
+@import url(../layout.css);
+
+header{
+    height: 40vh;
+    section.heading {padding-top: 40px;
+        justify-content: flex-start;
+    }
+}
+
+main,div{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    height: 30vh;
+    width: 100%;
+    }
+
+.user_profile{
+    margin-bottom: 5vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 40vh;
+    width: 40vw;
+    background-color: white;
+    border-radius: 2ch;
+    border: 1px solid;
+    & section{
+        display: flex;
+        height: 25%;
+        width: 100%;
+
+        & address{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+            width: 50%;
+        }
+
+        & article{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+            width: 50%;
+            & img{
+                margin-top: 2vh;
+                height: 100%;
+                border-radius: 5ch;}
+        }
+        & button{
+            color: white;
+            background-color: grey;
+            padding: 0px 1vw;
+            height: 40px;
+            border-radius: 1ch;
+            z-index: 1;
+            &:hover {
+                color: #ddd;
+                background-color: #ec7e24;}
+        }
+    }
+}
+.user_profile_button{
+    align-items: center;
+    justify-content: space-around;
+    gap: 1vw;
+}
+#user_profile_exit{
+    background-color: white;
+    color: red;
+    border: 1px solid red;
+    &:hover {
+        color: #fffcfc;
+        background-color: #000000;}
+}

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Вход</title>
+    <link rel="stylesheet" href="../../css/styles/sign.css" />
+    <script src="../../js/management/toIndex.js" defer></script>
+    <script src="../../js/management/fgtPassword.js" defer></script>
+    <script src="../../js/management/helpLogin.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <!-- Нвигация -->
+      <nav class="navigation">
+        <a href="../../index.html">Главная</a>
+        <a href="../../index.html#product_main">Каталог</a>
+        <a href="../../index.html#stock_main">Акции</a>
+        <a href="../../index.html#reviews_main">Отзывы</a>
+        <a href="../auth/register.html">Регистрация</a>
+      </nav>
+      <section class="heading">
+        <h1>траница входа в интернет-магазин!</h1>
+      </section>
+    </header>
+    <main>
+      <div class="login">
+        <form class="form-controller" id="login-form">
+          <h1>Вход</h1>
+          <input type="email" placeholder="Эл. Почта" required />
+          <input type="password" placeholder="Пароль" required />
+          <div>
+            <label><input type="checkbox" />запомнить меня</label>
+            <a href="" id="fgt-open-btn">Забыли пороль?</a>
+          </div>
+          <button>Войти</button>
+          <div>
+            <a href="../../components/auth/register.html">Создать аккаунт</a>
+            <a href="" id="help-open-btn">Помощь</a>
+          </div>
+        </form>
+      </div>
+    </main>
+    <footer>
+      <div id="information_main" class="information">
+        <article>
+          <h3>О нас</h3>
+          <p>Мы — современный интернет-магазин с лучшими товарами.</p>
+        </article>
+        <nav>
+          <h3>Ссылки</h3>
+          <a href="../../index.html">Главная</a>
+          <a href="../../index.html#product_main">Каталог</a>
+          <a href="../../index.html#stock_main">Акции</a>
+          <a href="../profile/profile.html">Профиль</a>
+        </nav>
+        <address>
+          <h3>Контакты</h3>
+          <p>Email: info@example.com</p>
+          <p>Телефон: +7 (123) 456-78-90</p>
+        </address>
+      </div>
+      <p>© 2025 Интернет-магазин. Все права защищены.</p>
+    </footer>
+    <div class="overview" id="overview"></div>
+    <aside class="dialog-window" id="canvas-fogot"></aside>
+  </body>
+</html>
